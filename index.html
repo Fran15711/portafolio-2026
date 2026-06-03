@@ -6,16 +6,25 @@
   <meta name="description" content="Portafolio profesional de Francisco Noriega: creatividad, adquisición, CRM, SEO y resultados medibles." />
   <meta name="theme-color" content="#10131d" />
   <title>Francisco Noriega | Portafolio de Marketing</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="./style.css?v=20260603" />
 </head>
+
 <body>
   <header class="site-header" id="inicio">
     <nav class="nav" aria-label="Navegación principal">
       <a class="nav__brand" href="#inicio">Francisco Noriega</a>
-      <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+
+      <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <div class="nav__menu">
         <a href="#evidencia" data-i18n="nav.evidence">Evidencia</a>
         <a href="#impacto" data-i18n="nav.impact">Impacto</a>
@@ -24,9 +33,15 @@
         <a href="#certificaciones" data-i18n="nav.certs">Certificaciones</a>
         <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
         <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+
         <div class="language-switch" aria-label="Selector de idioma">
-          <button class="language-switch__btn" type="button" data-lang-button="es" aria-label="Ver en español"><img src="assets/flag-mx.png" alt="México" /> ES</button>
-          <button class="language-switch__btn" type="button" data-lang-button="en" aria-label="Read in English"><img src="assets/flag-us.png" alt="United States" /> EN</button>
+          <button class="language-switch__btn" type="button" data-lang-button="es" aria-label="Ver en español">
+            <img src="./flag-mx.png" alt="México" /> ES
+          </button>
+
+          <button class="language-switch__btn" type="button" data-lang-button="en" aria-label="Read in English">
+            <img src="./flag-us.png" alt="United States" /> EN
+          </button>
         </div>
       </div>
     </nav>
@@ -36,20 +51,30 @@
     <section class="hero">
       <div class="hero__inner reveal">
         <p class="eyebrow" data-i18n="hero.eyebrow">Growth · Creatividad · Revenue</p>
-        <h1 data-i18n="hero.title">Construyo sistemas de adquisición.</h1>
-        <p class="hero__lead" data-i18n="hero.lead">
-        Si estás viendo esto es porque quiero trabajar contigo y agradezco mucho tu tiempo, 
-        tu interés y tu buena intuición :)
 
-        En este portafolio encontrarás evidencias y resultados de las estrategias y proyectos 
-        de los que he sido responsable.</p>
+        <h1 data-i18n="hero.title">Construyo sistemas de adquisición.</h1>
+
+        <p class="hero__lead" data-i18n="hero.lead">
+          Si estás viendo esto es porque quiero trabajar contigo y agradezco mucho tu tiempo,
+          tu interés y tu buena intuición :)
+
+          En este portafolio encontrarás evidencias y resultados de las estrategias y proyectos
+          de los que he sido responsable.
+        </p>
+
         <div class="hero__signals" aria-label="Especialidades principales">
-          <span data-i18n="hero.signal1">B2B</span><span data-i18n="hero.signal2">B2C</span><span data-i18n="hero.signal3">SEO</span><span data-i18n="hero.signal4">CRM</span><span data-i18n="hero.signal5">Pauta</span><span data-i18n="hero.signal6">Contenido</span>
+          <span data-i18n="hero.signal1">B2B</span>
+          <span data-i18n="hero.signal2">B2C</span>
+          <span data-i18n="hero.signal3">SEO</span>
+          <span data-i18n="hero.signal4">CRM</span>
+          <span data-i18n="hero.signal5">Pauta</span>
+          <span data-i18n="hero.signal6">Contenido</span>
         </div>
+
         <div class="hero__actions">
           <a class="btn btn--primary" href="#evidencia" data-i18n="hero.ctaEvidence">Ver evidencia</a>
           <a class="btn btn--ghost" href="#seccion3" data-i18n="hero.ctaProjects">Explorar proyectos</a>
-          <a class="btn btn--ghost" href="assets/CV_Francisco_Noriega_ES.pdf" target="_blank" rel="noopener" data-cv-download data-i18n="hero.ctaCv">Descargar CV</a>
+          <a class="btn btn--ghost" href="./CV_Francisco_Noriega_ES.pdf" target="_blank" rel="noopener" data-cv-download data-i18n="hero.ctaCv">Descargar CV</a>
         </div>
       </div>
     </section>
@@ -60,13 +85,43 @@
         <h2 data-i18n="evidence.title">Ve directo a lo que importa.</h2>
         <p data-i18n="evidence.text">Reportes, proyectos y piezas reales que puedes abrir.</p>
       </div>
+
       <div class="evidence-grid reveal">
-        <a class="evidence-card evidence-card--main" href="https://fran15711.github.io/reporteanualgalga2025/" onclick="openPopup(event, this.href)"><small data-i18n="evidence.galgaSub">ventas, inversión y resultados</small><strong data-i18n="evidence.galga">Reporte anual Galga</strong><span>→</span></a>
-        <a class="evidence-card" href="https://fran15711.github.io/reportemensualetmcolombia/" onclick="openPopup(event, this.href)"><small data-i18n="evidence.colombiaSub">seguimiento mensual</small><strong data-i18n="evidence.colombia">Reporte ETM Colombia</strong><span>→</span></a>
-        <a class="evidence-card" href="https://es.semrush.com/analytics/overview/?q=galga.mx&protocol=https&searchType=domain" target="_blank" rel="noopener"><small data-i18n="evidence.semrushSub">tráfico y SEO orgánico</small><strong data-i18n="evidence.semrush">SEMrush Galga</strong><span>↗</span></a>
-        <a class="evidence-card" href="#seccion3"><small data-i18n="evidence.projectsSub">marcas, sectores y entregables</small><strong data-i18n="evidence.projects">Proyectos destacados</strong><span>↓</span></a>
-        <a class="evidence-card" href="#seccion5"><small data-i18n="evidence.reelSub">video, edición y contenido</small><strong data-i18n="evidence.reel">Demo Reel</strong><span>↓</span></a>
-        <a class="evidence-card" href="#certificaciones"><small data-i18n="evidence.certsSub">Google, HubSpot e inglés</small><strong data-i18n="evidence.certs">Certificaciones</strong><span>↓</span></a>
+        <a class="evidence-card evidence-card--main" href="https://fran15711.github.io/reporteanualgalga2025/" onclick="openPopup(event, this.href)">
+          <small data-i18n="evidence.galgaSub">ventas, inversión y resultados</small>
+          <strong data-i18n="evidence.galga">Reporte anual Galga</strong>
+          <span>→</span>
+        </a>
+
+        <a class="evidence-card" href="https://fran15711.github.io/reportemensualetmcolombia/" onclick="openPopup(event, this.href)">
+          <small data-i18n="evidence.colombiaSub">seguimiento mensual</small>
+          <strong data-i18n="evidence.colombia">Reporte ETM Colombia</strong>
+          <span>→</span>
+        </a>
+
+        <a class="evidence-card" href="https://es.semrush.com/analytics/overview/?q=galga.mx&protocol=https&searchType=domain" target="_blank" rel="noopener">
+          <small data-i18n="evidence.semrushSub">tráfico y SEO orgánico</small>
+          <strong data-i18n="evidence.semrush">SEMrush Galga</strong>
+          <span>↗</span>
+        </a>
+
+        <a class="evidence-card" href="#seccion3">
+          <small data-i18n="evidence.projectsSub">marcas, sectores y entregables</small>
+          <strong data-i18n="evidence.projects">Proyectos destacados</strong>
+          <span>↓</span>
+        </a>
+
+        <a class="evidence-card" href="#seccion5">
+          <small data-i18n="evidence.reelSub">video, edición y contenido</small>
+          <strong data-i18n="evidence.reel">Demo Reel</strong>
+          <span>↓</span>
+        </a>
+
+        <a class="evidence-card" href="#certificaciones">
+          <small data-i18n="evidence.certsSub">Google, HubSpot e inglés</small>
+          <strong data-i18n="evidence.certs">Certificaciones</strong>
+          <span>↓</span>
+        </a>
       </div>
     </section>
 
@@ -75,11 +130,27 @@
         <p class="eyebrow" data-i18n="impact.eyebrow">Impacto resumido</p>
         <h2 data-i18n="impact.title">Resultados en corto.</h2>
       </div>
+
       <div class="metric-grid reveal">
-        <article><strong>$3M MXN</strong><span data-i18n="metric.revenue">mensuales atribuidos a marketing</span></article>
-        <article><strong>1,200–1,500</strong><span data-i18n="metric.leads">leads mensuales</span></article>
-        <article><strong>70</strong><span data-i18n="metric.sql">SQLs aprox. al mes</span></article>
-        <article><strong>Top 1–3</strong><span data-i18n="metric.seo">posiciones SEO en búsquedas industriales</span></article>
+        <article>
+          <strong>$3M MXN</strong>
+          <span data-i18n="metric.revenue">mensuales atribuidos a marketing</span>
+        </article>
+
+        <article>
+          <strong>1,200–1,500</strong>
+          <span data-i18n="metric.leads">leads mensuales</span>
+        </article>
+
+        <article>
+          <strong>70</strong>
+          <span data-i18n="metric.sql">SQLs aprox. al mes</span>
+        </article>
+
+        <article>
+          <strong>Top 1–3</strong>
+          <span data-i18n="metric.seo">posiciones SEO en búsquedas industriales</span>
+        </article>
       </div>
     </section>
 
@@ -88,15 +159,45 @@
         <p class="eyebrow" data-i18n="galga.eyebrow">Caso principal</p>
         <h2 data-i18n="galga.title">Galga Maquinaria</h2>
         <p data-i18n="galga.lead">Producto técnico, venta consultiva y ticket alto.</p>
+
         <div class="galga-blocks">
-          <article><span>01</span><strong data-i18n="galga.block1">SEO comercial</strong><p data-i18n="galga.block1Sub">intención de compra</p></article>
-          <article><span>02</span><strong data-i18n="galga.block2">CRM + atribución</strong><p data-i18n="galga.block2Sub">fuente → lead → asesor → venta</p></article>
-          <article><span>03</span><strong data-i18n="galga.block3">Activos de venta</strong><p data-i18n="galga.block3Sub">web, fichas, videos, 3D</p></article>
-          <article><span>04</span><strong data-i18n="galga.block4">Pauta + seguimiento</strong><p data-i18n="galga.block4Sub">Meta, Google y conversación comercial</p></article>
+          <article>
+            <span>01</span>
+            <strong data-i18n="galga.block1">SEO comercial</strong>
+            <p data-i18n="galga.block1Sub">intención de compra</p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <strong data-i18n="galga.block2">CRM + atribución</strong>
+            <p data-i18n="galga.block2Sub">fuente → lead → asesor → venta</p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <strong data-i18n="galga.block3">Activos de venta</strong>
+            <p data-i18n="galga.block3Sub">web, fichas, videos, 3D</p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <strong data-i18n="galga.block4">Pauta + seguimiento</strong>
+            <p data-i18n="galga.block4Sub">Meta, Google y conversación comercial</p>
+          </article>
         </div>
+
         <div class="keywords">
           <strong data-i18n="galga.keywords">Búsquedas trabajadas</strong>
-          <div><span>bordadora industrial</span><span>plotter de impresión</span><span>calandra</span><span>DTF</span><span>impresora DTF</span><span>Mimaki</span><span>papel de sublimación</span><span>tejedora rectilínea</span></div>
+          <div>
+            <span>bordadora industrial</span>
+            <span>plotter de impresión</span>
+            <span>calandra</span>
+            <span>DTF</span>
+            <span>impresora DTF</span>
+            <span>Mimaki</span>
+            <span>papel de sublimación</span>
+            <span>tejedora rectilínea</span>
+          </div>
         </div>
       </div>
     </section>
@@ -104,6 +205,7 @@
     <section class="seccion3" id="seccion3">
       <div class="filtros reveal">
         <label for="filtro1" class="filtro-label" data-i18n="projects.filterLabel">Filtrar proyectos por:</label>
+
         <div class="select-container">
           <select id="filtro1" aria-label="Filtrar por sector">
             <option value="" data-i18n="projects.sectors">Sectores</option>
@@ -124,6 +226,7 @@
             <option value="Médico" data-i18n="sector.medical">Médico</option>
           </select>
         </div>
+
         <div class="select-container">
           <select id="filtro2" aria-label="Filtrar por tipo de trabajo">
             <option value="" data-i18n="projects.workTypes">Tipos de trabajos</option>
@@ -145,127 +248,183 @@
           </select>
         </div>
       </div>
+
       <h2 data-i18n="projects.title">Proyectos destacados</h2>
       <p data-i18n="projects.subtitle">Agrupados por marca. Haz clic en un hexágono para descubrir entregables.</p>
+
       <div class="panal">
+        <div class="hex-row">
+          <div class="hex" id="Seguridad">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/loguin%20centinela.png" alt="Icono">
+          </div>
+          <div class="hex" id="Ropa y Calzado">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/LOGO_DENVER_BLANCO_Y_DORADO%20imagotipo.png" alt="Icono">
+          </div>
+        </div>
 
-    <div class="hex-row">
-      <div class="hex" id="Seguridad">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/loguin%20centinela.png" alt="Icono">
-      </div>
-      <div class="hex" id="Ropa y Calzado">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/LOGO_DENVER_BLANCO_Y_DORADO%20imagotipo.png" alt="Icono">
-      </div>
-    </div>
+        <div class="hex-row">
+          <div class="hex" id="Manufactura">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/imagotipo%20fabricante-de-espuma-eva-header-logo.png" alt="Icono">
+          </div>
+          <div class="hex" id="Alimentos y Bebidas">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/avqzgkag0.png" alt="Icono">
+          </div>
+          <div class="hex" id="Alimentos y Bebidas">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo%20chimirica.png" alt="Icono">
+          </div>
+        </div>
 
-    <div class="hex-row">
-      <div class="hex" id="Manufactura">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/imagotipo%20fabricante-de-espuma-eva-header-logo.png" alt="Icono">
-      </div>
-      <div class="hex" id="Alimentos y Bebidas">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/avqzgkag0.png" alt="Icono">
-      </div>
-      <div class="hex" id="Alimentos y Bebidas" >
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo%20chimirica.png" alt="Icono">
-      </div>
-    </div>
+        <div class="hex-row">
+          <div class="hex" id="Ropa y Calzado">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo%20mex7%20boots.png" alt="Icono">
+          </div>
+          <div class="hex" id="Bienes Raíces">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo%20bikia.png" alt="Icono">
+          </div>
+          <div class="hex" id="Agencia de Marketing">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/media%20(6)%202.png" alt="Icono">
+          </div>
+          <div class="hex" id="Turismo y Hotelería">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo%20ecoparque%20providencia.png" alt="Icono">
+          </div>
+        </div>
 
-    <div class="hex-row">
-      <div class="hex" id="Ropa y Calzado">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo%20mex7%20boots.png" alt="Icono">
-      </div>
-      <div class="hex" id="Bienes Raíces">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo%20bikia.png" alt="Icono">
-      </div>
-      <div class="hex" id="Agencia de Marketing">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/media%20(6)%202.png" alt="Icono">
-      </div>
-      <div class="hex" id="Turismo y Hotelería">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo%20ecoparque%20providencia.png" alt="Icono">
-      </div>
-    </div>
+        <div class="hex-row">
+          <div class="hex" id="Plaza Comercial">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/loguin.png" alt="Icono">
+          </div>
+          <div class="hex" id="Suplementos">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/media%20(1).png" alt="Icono">
+          </div>
+          <div class="hex" id="Arrendamiento">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/ROCARENT%20LOGO.png" alt="Icono">
+          </div>
+          <div class="hex" id="Plaza Comercial">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/PASEO%20MORELOS.png" alt="Icono">
+          </div>
+          <div class="hex" id="Manufactura">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/244170509_1976705719155936_2401628594957245460_n.png" alt="Icono">
+          </div>
+        </div>
 
-    <div class="hex-row">
-      <div class="hex" id="Plaza Comercial">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/loguin.png" alt="Icono">
-      </div>
-      <div class="hex" id="Suplementos">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/media%20(1).png" alt="Icono">
-      </div>
-      <div class="hex" id="Arrendamiento">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/ROCARENT%20LOGO.png" alt="Icono">
-      </div>
-      <div class="hex" id="Plaza Comercial">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/PASEO%20MORELOS.png" alt="Icono">
-      </div>
-      <div class="hex" id="Manufactura">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/244170509_1976705719155936_2401628594957245460_n.png" alt="Icono">
-      </div>
-    </div>
+        <div class="hex-row">
+          <div class="hex" id="Bienes Raíces">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo-PRV.png" alt="Icono">
+          </div>
+          <div class="hex" id="Arte y Decoración">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/imagotipo%2011%20inks.png" alt="Icono">
+          </div>
+          <div class="hex" id="Maquinaria y Transporte">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/media%20(3).png" alt="Icono">
+          </div>
+          <div class="hex" id="Agroalimentario">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo-agro.png" alt="Icono">
+          </div>
+        </div>
 
-    <div class="hex-row">
-      <div class="hex" id="Bienes Raíces">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo-PRV.png" alt="Icono">
-      </div>
-      <div class="hex" id="Arte y Decoración">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/imagotipo%2011%20inks.png" alt="Icono">
-      </div>
-      <div class="hex" id="Maquinaria y Transporte">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/media%20(3).png" alt="Icono">
-      </div>
-      <div class="hex" id="Agroalimentario">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo-agro.png" alt="Icono">
-      </div>
-    </div>
+        <div class="hex-row">
+          <div class="hex" id="Manufactura">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/media%20(4).png" alt="Icono">
+          </div>
+          <div class="hex" id="Avalúos">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/VAL_logo.png" alt="Icono">
+          </div>
+          <div class="hex" id="Bienes Raíces">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo-neen.png" alt="Icono">
+          </div>
+        </div>
 
-    <div class="hex-row">
-      <div class="hex" id="Manufactura">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/media%20(4).png" alt="Icono">
+        <div class="hex-row">
+          <div class="hex" id="Bienes Raíces">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/Recurso-5.png" alt="Icono">
+          </div>
+          <div class="hex" id="Médico">
+            <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/media%20(5).png" alt="Icono">
+          </div>
+        </div>
       </div>
-      <div class="hex" id="Avalúos">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/VAL_logo.png" alt="Icono">
-      </div>
-      <div class="hex" id="Bienes Raíces">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/logo-neen.png" alt="Icono">
-      </div>
-    </div>
-
-    <div class="hex-row">
-      <div class="hex" id="Bienes Raíces">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/Recurso-5.png" alt="Icono">
-      </div>
-      <div class="hex" id="Médico">
-        <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/media%20(5).png" alt="Icono">
-      </div>
-    </div>
-  </div>
-
     </section>
 
-
     <section class="certs section-pad" id="certificaciones">
-      <div class="section-head reveal"><p class="eyebrow" data-i18n="cert.eyebrow">Evidencia profesional</p><h2 data-i18n="cert.title">Certificaciones</h2></div>
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="cert.eyebrow">Evidencia profesional</p>
+        <h2 data-i18n="cert.title">Certificaciones</h2>
+      </div>
+
       <div class="cert-grid reveal">
-        <a href="https://skillshop.credential.net/c46cc691-19b3-4d85-ac1d-8e1cd058ee31#acc.vC9GneV1" data-shiny-button class="shiny-button enlace1" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/search%2Bprofessionals%2Bbadge-640w.png" alt="Google Ads badge"><p data-i18n="cert.google">Búsqueda Google Ads</p><canvas></canvas></a>
-        <a href="https://app.hubspot.com/academy/achievements/y91wzc6k/es/1/francisco-noriega/certificacion-de-email-marketing" data-shiny-button class="shiny-button enlace2" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/HubSpot-Logo.png" alt="HubSpot logo"><p data-i18n="cert.email">Email Marketing</p><canvas></canvas></a>
-        <a href="https://app.hubspot.com/academy/achievements/pdkr328w/es/1/francisco-noriega/marketing-de-contenidos" data-shiny-button class="shiny-button enlace3" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/HubSpot-Logo.png" alt="HubSpot logo"><p data-i18n="cert.content">Marketing de Contenidos</p><canvas></canvas></a>
-        <a href="https://app.smalltalk2.me/cert/7ba3ea7f" data-shiny-button class="shiny-button enlace4" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/samlltalk2me.png" alt="SmallTalk2Me logo"><p data-i18n="cert.english">Inglés: evaluación C1 · trabajo cómodo B2</p><canvas></canvas></a>
+        <a href="https://skillshop.credential.net/c46cc691-19b3-4d85-ac1d-8e1cd058ee31#acc.vC9GneV1" data-shiny-button class="shiny-button enlace1" target="_blank" rel="noopener">
+          <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/search%2Bprofessionals%2Bbadge-640w.png" alt="Google Ads badge">
+          <p data-i18n="cert.google">Búsqueda Google Ads</p>
+          <canvas></canvas>
+        </a>
+
+        <a href="https://app.hubspot.com/academy/achievements/y91wzc6k/es/1/francisco-noriega/certificacion-de-email-marketing" data-shiny-button class="shiny-button enlace2" target="_blank" rel="noopener">
+          <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/HubSpot-Logo.png" alt="HubSpot logo">
+          <p data-i18n="cert.email">Email Marketing</p>
+          <canvas></canvas>
+        </a>
+
+        <a href="https://app.hubspot.com/academy/achievements/pdkr328w/es/1/francisco-noriega/marketing-de-contenidos" data-shiny-button class="shiny-button enlace3" target="_blank" rel="noopener">
+          <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/HubSpot-Logo.png" alt="HubSpot logo">
+          <p data-i18n="cert.content">Marketing de Contenidos</p>
+          <canvas></canvas>
+        </a>
+
+        <a href="https://app.smalltalk2.me/cert/7ba3ea7f" data-shiny-button class="shiny-button enlace4" target="_blank" rel="noopener">
+          <img src="https://raw.githubusercontent.com/Fran15711/prueba1/refs/heads/main/samlltalk2me.png" alt="SmallTalk2Me logo">
+          <p data-i18n="cert.english">Inglés: evaluación C1 · trabajo cómodo B2</p>
+          <canvas></canvas>
+        </a>
       </div>
     </section>
 
     <section class="experience section-pad" id="experiencia">
-      <div class="section-head reveal"><p class="eyebrow" data-i18n="exp.eyebrow">Trayectoria</p><h2 data-i18n="exp.title">Creatividad, contenido y growth.</h2></div>
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="exp.eyebrow">Trayectoria</p>
+        <h2 data-i18n="exp.title">Creatividad, contenido y growth.</h2>
+      </div>
+
       <div class="experience-grid reveal">
-        <article><small>2025—Actualidad</small><h3>Galga Maquinaria</h3><p data-i18n="exp.galga">Growth, SEO, CRM, pauta y atribución comercial para maquinaria industrial.</p><a href="#galga">Galga</a></article>
-        <article><small>2023—2024</small><h3>Evacolors</h3><p data-i18n="exp.eva">Contenido técnico B2B, SEO, email y materiales comerciales.</p><a href="https://fran15711.github.io/cartarecomendacionevacolors/" onclick="openPopup(event, this.href)" data-i18n="exp.letter">Carta</a></article>
-        <article><small>2022—2023</small><h3>Mercadoctor</h3><p data-i18n="exp.mdr">Estrategias para 15+ marcas: branding, SEO, copy, guiones y KPIs.</p><a href="https://fran15711.github.io/cartarecomendacionmdr/" onclick="openPopup(event, this.href)" data-i18n="exp.letter">Carta</a></article>
-        <article><small>2020—2022</small><h3>Mex7 Boots</h3><p data-i18n="exp.mex7">Branding, Shopify, redes, campañas, ferias y prospección.</p><a href="https://fran15711.github.io/cartasrecomendacion/" onclick="openPopup(event, this.href)" data-i18n="exp.letter">Carta</a></article>
+        <article>
+          <small>2025—Actualidad</small>
+          <h3>Galga Maquinaria</h3>
+          <p data-i18n="exp.galga">Growth, SEO, CRM, pauta y atribución comercial para maquinaria industrial.</p>
+          <a href="#galga">Galga</a>
+        </article>
+
+        <article>
+          <small>2023—2024</small>
+          <h3>Evacolors</h3>
+          <p data-i18n="exp.eva">Contenido técnico B2B, SEO, email y materiales comerciales.</p>
+          <a href="https://fran15711.github.io/cartarecomendacionevacolors/" onclick="openPopup(event, this.href)" data-i18n="exp.letter">Carta</a>
+        </article>
+
+        <article>
+          <small>2022—2023</small>
+          <h3>Mercadoctor</h3>
+          <p data-i18n="exp.mdr">Estrategias para 15+ marcas: branding, SEO, copy, guiones y KPIs.</p>
+          <a href="https://fran15711.github.io/cartarecomendacionmdr/" onclick="openPopup(event, this.href)" data-i18n="exp.letter">Carta</a>
+        </article>
+
+        <article>
+          <small>2020—2022</small>
+          <h3>Mex7 Boots</h3>
+          <p data-i18n="exp.mex7">Branding, Shopify, redes, campañas, ferias y prospección.</p>
+          <a href="https://fran15711.github.io/cartasrecomendacion/" onclick="openPopup(event, this.href)" data-i18n="exp.letter">Carta</a>
+        </article>
       </div>
     </section>
 
     <section class="reel section-pad" id="seccion5">
-      <div class="section-head reveal"><p class="eyebrow" data-i18n="reel.eyebrow">Contenido audiovisual</p><h2 data-i18n="reel.title">Demo Reel</h2><p data-i18n="reel.text">Una muestra breve de video, edición y dirección de contenido.</p></div>
-      <div class="video-card reveal"><iframe src="https://www.youtube.com/embed/30472IYbWCw?rel=0&iv_load_policy=3" title="Demo Reel Francisco Noriega" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="reel.eyebrow">Contenido audiovisual</p>
+        <h2 data-i18n="reel.title">Demo Reel</h2>
+        <p data-i18n="reel.text">Una muestra breve de video, edición y dirección de contenido.</p>
+      </div>
+
+      <div class="video-card reveal">
+        <iframe src="https://www.youtube.com/embed/30472IYbWCw?rel=0&iv_load_policy=3" title="Demo Reel Francisco Noriega" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
     </section>
 
     <section class="contact section-pad" id="contacto">
@@ -273,13 +432,22 @@
         <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
         <h2 data-i18n="contact.title">¿Agendamos una llamada?</h2>
         <p data-i18n="contact.text">Si llegaste hasta aquí, gracias por revisar mi trabajo. Me dará gusto hablar contigo.</p>
-        <div class="contact-actions"><a class="btn btn--primary" href="mailto:francisconoriegaret15@gmail.com?subject=Contacto%20por%20portafolio%20-%20Francisco%20Noriega" data-i18n="contact.email">Enviar correo</a><a class="btn btn--ghost" href="assets/CV_Francisco_Noriega_ES.pdf" target="_blank" rel="noopener" data-i18n="contact.cvEs">CV Español</a><a class="btn btn--ghost" href="assets/CV_Francisco_Noriega_EN.pdf" target="_blank" rel="noopener" data-i18n="contact.cvEn">CV English</a></div>
+
+        <div class="contact-actions">
+          <a class="btn btn--primary" href="mailto:francisconoriegaret15@gmail.com?subject=Contacto%20por%20portafolio%20-%20Francisco%20Noriega" data-i18n="contact.email">Enviar correo</a>
+          <a class="btn btn--ghost" href="./CV_Francisco_Noriega_ES.pdf" target="_blank" rel="noopener" data-i18n="contact.cvEs">CV Español</a>
+          <a class="btn btn--ghost" href="./CV_Francisco_Noriega_EN.pdf" target="_blank" rel="noopener" data-i18n="contact.cvEn">CV English</a>
+        </div>
+
         <p class="contact-meta">León, Guanajuato · francisconoriegaret15@gmail.com · (477) 880-5671</p>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><p data-i18n="footer.text">Francisco Noriega · Marketing Portfolio</p></footer>
-  <script src="script.js"></script>
+  <footer class="footer">
+    <p data-i18n="footer.text">Francisco Noriega · Marketing Portfolio</p>
+  </footer>
+
+  <script src="./script.js?v=20260603"></script>
 </body>
 </html>
